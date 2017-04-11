@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>別ウィンドウで開くリンクにアイコンをつける | c05-02-g</title>
+<style>
+a {
+	color: #0073bc;
+}
+a:hover {
+	color: #b7dbf2;
+}
+a[target="_blank"]::after {
+	content: url(../../images/opentab.png);　/* 　::after　のことを疑似要素　という */
+}
+	/* セレクタ名                               使い方
+		checked　　　　　　　　　　　　　　　　　　　チェックがついてるラジオボタンやチェックボックスをつかうとき
+		a[href^="https://"]　　　　　　　　　　　　hhttps://ではじまるるリンクの前にアイコンを表示
+		a[href$+".pdf]	　　　　　　　　　　　　　　リンク先がPDFファイルの時アイコンを表示する。
+	
+	*/
+</style>
+</head>
+<body>
+	<ul>
+		<li><a href="first-login.html">はじめてログインするときは</a></li>
+		<li><a href="token-help.html" target="_blank">ワンタイムパスワードの使い方ヘルプ</a></li>
+	</ul>
+</body>
+</html>
