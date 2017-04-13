@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>パンくずリストを作成する | c06-02-d</title>
+<style>
+.breadcrumb ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.breadcrumb li {　
+	display: inline; /* display: inline; →　要素をインラインボックで表示する。
+	　　　　　　　　　　　　display: inline-block; →　要素をインラインブロックで表示する。
+	　　　　　　　　　　　　display: block ; →　要素をブロックボックスで表示する。
+	　　　　　　　　　　　　display: none;　→　要素を非表示にする。
+	*/
+}
+.breadcrumb li::after {
+	content: "»";
+	color: #999;
+}
+.breadcrumb li:last-child::after {
+	/*
+	最後の<li>のあとには、contentをつけないため、:after のあとにnone を適用させている。
+	*/
+	content: none;
+}
+.breadcrumb a {
+	text-decoration: none;
+	color: #1864b9;
+}
+</style>
+</head>
+<body>
+<div class="breadcrumb">
+	<ol>
+		<li><a href="/">ホーム</a></li>
+		<li><a href="/products/">製品リスト</a></li>
+		<li><a href="/products/lens/">カメラレンズ</a></li>
+		<li>広角レンズ</li>
+	</ol>
+</div>
+</body>
+</html>
+
+<!---　
+パンくずリストは<ol>でつくるのがよい！
+序列のない<ul>より、序列のある<ol>のほうが適切といえる。
+--->
+
+
+<!---
+<div>は、
+1,見出しと関連するコンテンツをまとめるとき
+2,パーツの境界をつくるとき
+3,HTMLの階層を揃えるとき
+
+<div> より的確なグループ化要素
+<mail></main> →　1つのhtmlで１度しか使うことができない。　メインコンテンツを囲む時に使う。
+<article></article> →　ページの記事や中心となるコンテンツを囲む時に使う。
+<section></section> → 記事のセクションや独立したコンテンツを囲むときにつかう。
+<aside></aside> →　サイドバーを囲む時などに使う。
+<header></header> ヘッダーを囲む
+<footer></footer> →　フッターを囲む時に使う。
+--->
