@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>偶数行・奇数行で背景色を変える | c07-04-a</title>
+<style>
+table {
+	border-collapse: collapse;
+}
+.price caption {
+	color: #1f8ef5;
+}
+.price th, td {
+	border: 1px solid #e3ecf5;
+	padding: 8px;
+}
+.price th {
+	border: 1px solid #e3ecf5;
+	color: #fff;
+	background: #1f8ef5;
+}
+.price tr:nth-child(odd) {
+	background: #e3ecf5;
+}
+/*
+:nth-child(n)セレクタ
+.price tr:nth-child(odd)　→　ここでは	:nth-child(n)というセレクタを使用しています。
+nに条件式に合うものを選択しています。　oddを選択しているので奇数目にある要素を選択しています。
+
+セレクタの例
+:nth-child(odd) 奇数番目に選択される要素
+:nth-child(even) 偶数目に選択される要素
+:nth-child(2n)　nには0以上の整数が自動で入る。　この場合、2 4 6。。。。番目の要素ということ。
+:nth-child(2n+1)　この場合1,3,5.....番目の要素
+:nth-child(3n)　この場合3,6,9.....番目の要素
+:first-child 最初にでてくる要素
+:last-child	最後に出てくる要素のこと。
+*/	
+</style>
+</head>
+<body>
+<table class="price">
+<caption>基本料金（1時間）</caption>
+<tr>
+	<th>ルーム名</th><th>平日</th><th>土日祝</th><th>個人練習</th>
+</tr>
+<tr>
+	<td>8帖</td><td>&yen;1,080</td><td>&yen;2,160</td><td>&yen;540</td>
+</tr>
+<tr>
+	<td>12帖East</td><td>&yen;1,620</td><td>&yen;3,240</td><td>&yen;810</td>
+</tr>
+<tr>
+	<td>12帖West</td><td>&yen;1,620</td><td>&yen;3,240</td><td>&yen;810</td>
+</tr>
+<tr>
+	<td>16帖</td><td>&yen;2,160</td><td>&yen;4,320</td><td>&yen;1,080</td>
+</tr>
+<tr>
+	<td>20帖</td><td>&yen;2,700</td><td>&yen;5,832</td><td>&yen;1,350</td>
+</tr>
+<tr>
+	<td>30帖</td><td>&yen;4,050</td><td>&yen;8,100</td><td>&yen;2,025</td>
+</tr>
+</table>
+</body>
+</html>
