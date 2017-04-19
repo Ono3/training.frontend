@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>テキストフィールドとフォーム部品の基本的なマークアップ | c08-01-a</title>
+</head>
+<body>
+<form action="mailform.php" method="post">
+	<p><label for="name-field">お名前</label><br>
+	<input type="text" name="name" id="name-field"></p>
+<!---
+input type="text"なので、テキストフィールドが表示されます。
+labelタグは<label>タグとフォームを関連付けされます。
+この場合お名前をクリックすると、入力可能になる。
+--->
+</form>
+</body>
+</html>
+
+
+<!---
+
+フォームの基本構造
+<form action="データを送りたいURL">
+<input type ="text" name="name>
+<input type="checkbox" name="check"  value="c1">
+......
+</form>
+
+<form>の中にはaction要素が必須。
+
+<input>以外にも<textarea>や<select>をつかう！
+
+--->

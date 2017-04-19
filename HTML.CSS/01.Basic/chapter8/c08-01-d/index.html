@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>テキストフィールドのサイズを幅100%にする | c08-01-d</title>
+<style>
+body {
+	margin: 0;
+}
+form {
+	padding: 16px;
+}
+input {
+	box-sizing: border-box;
+}
+input[type="text"] {
+	margin: 0.5em 0;
+	padding: 0.5em;
+	width: 100%;
+	font-size: 16px;
+}
+/*
+	テキストフィールドの値を100%にすると、親要素である<form>の幅と同じになってしまいます。
+	左右のpadding marginを設定しているので親要素より大きくなってしう。そのためには領域をはみ出さないように、box-sizing:border-box;　にするとwidthプロパティで指定した幅にmargin paddingの値もはいるため治ります。
+*/	
+</style>
+</head>
+<body>
+<form action="#">
+	<p><label for="name-field">お名前</label><br>
+	<input type="text" name="name" id="name-field" required></p>
+</form>
+</body>
+</html>
