@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ユーザーに「入力必須」であることを伝えるHTMLの例 | c08-01-c</title>
+<style>
+.required {
+	padding: 0.5em;
+	font-size: 0.75em;
+	color: #ff0000;
+}
+</style>
+</head>
+<body>
+<form action="#">
+	<p><label for="name-field">お名前<span class="required">*必須</span></label><br>
+	<input type="text" name="name" id="name-field" required></p>
+	<!---
+	必須項目をつけるときは<span>をつかってかく。
+	reqiredは<form>部分に入力することで、ユーザーが何も記入せずに送信した際に、警告が出る表示を出すことができます。
+	reqiredのように設定する値がないものを、プール属性といいます。
+	checked,selected,autofocus,disabledなどがあります。
+	--->
+</form>
+</body>
+</html>
