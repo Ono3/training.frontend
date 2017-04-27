@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Web designer's portfolio</title>
+<meta name="description" content="このサイトは「HTML/CSS モダンコーディング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオサイトです">
+<meta name="keywords" content="Web designer's portfolio,HTML5,JavaScript,Design,HTML/CSS モダンコーディング,coding,idea,フリーランス">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/reset.css" > 
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" >
+
+</head>
+<body>
+<!--------------------header--------------------> 
+	<header class="header">
+		<div class="title">Web designer's portfolio</div>
+		<h1 class="name">Hi,MY NAME IS...</h1>
+		<div class="sub-title">Check out some of my works.</div>
+		<div class="header-btn">
+			<div class="learnmore"><a href="#">LEARN MORE</a></div>
+			<div class="sendmessage"><a href="#">SEND MESSAGE</a></div>
+		</div>	
+	</header>
+	<!--------------------main--------------------> 
+	<main class="main">
+	<!----about---->
+		<section class="about">
+			<h2 class="content-name-black">ABOUT ME</h2>
+			<p>はじめまして、日本でWebデザイナーをしています。</p>
+			<p>デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。</p>
+			<p></p>
+			<p>このサイトは「HTML/CSS モダンコーディング」という書籍のサンプルとして作られた、架空のWebデザイナーのポートフォリオサイトです。</p>
+			<p>このサンプルのようなサイトをいちから作る過程を通して、HTMLとCSSの実践的なコーディングノウハウを学ぶことができます。</p>
+		</section>
+	<!----works---->		
+		<section class="works">
+			<ul class="works-container">
+				<li>
+					<figure class="works-container-odd">
+						<img src="images/tree.jpg" alt="一つ目の制作事例">
+						<figcaption>
+								一つ目の制作事例があります。<br>
+								簡単な説明が入ります。<br>
+								使用ツール：XXX, XXX, XXX	
+						</figcaption>
+						<a href="#" class="readmore">READ MORE</a>
+					</figure>
+				</li>
+
+				<li>
+					<figure class="works-container-even">
+						<img src="images/building.jpg" alt="ふたつめの制作事例">
+						<figcaption>
+								ふたつめの制作事例があります。<br>
+								簡単な説明が入ります。<br>
+								使用ツール：XXX, XXX, XXX	
+						</figcaption>
+						<a href="#" class="readmore">READ MORE</a>
+					</figure>
+				</li>
+				<li>
+					<figure class="works-container-odd">
+						<img src="images/lake.jpg" alt="みっつめの制作事例">
+						<figcaption>
+								みっつめの制作事例があります。<br>
+								簡単な説明が入ります。<br>
+								使用ツール：XXX, XXX, XXX	
+						</figcaption>
+						<a href="#" class="readmore">READ MORE</a>
+					</figure>
+				</li>
+				<li>
+					<figure class="works-container-even">
+						<img src="images/sky.jpg" alt="よっつめの制作事例">
+						<figcaption>
+								よっつめの制作事例があります。<br>
+								簡単な説明が入ります。<br>
+								使用ツール：XXX, XXX, XXX	
+						</figcaption>
+						<a href="#" class="readmore">READ MORE</a>
+					</figure>
+				</li>		
+			</ul>
+		</section>
+	<!----my skill---->		
+		<section class="skill">
+			<h2 class="content-name-black">MY SKILLS</h2>
+			<ul class="skill-container">
+				<li class="idea">
+					<div class="skill-icon">
+						<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+					</div>
+					<div class="skill-title">IDEA</div>
+					<div class="skill-description">
+						<p>何かを考えることが好きです。</p>
+						<p>新しいことを思いついては試しています。</p>
+						<p>ディレクションの経験もあります。</p>
+					</div>
+				</li>
+				<li class="design">
+					<div class="skill-icon">
+						<i class="fa fa-paint-brush" aria-hidden="true"></i>
+					</div>
+					<div class="skill-title">design</div>
+					<div class="skill-description">
+						<p>見た目の綺麗さだけじゃなくて、<br>
+						   使いやすさ、情報の伝わりやすさなど、<br>
+						   その先まで考えることを意識しています。</p>
+					</div>
+				</li>
+				<li class="coding">
+					<div class="skill-icon">
+						<i class="fa fa-code" aria-hidden="true"></i>
+					</div>
+					<div class="skill-title">coding</div>
+					<div class="skill-description">
+						<p>HTML/CSSコーディングも行います。</p>
+						<p>正しく美しいマークアップと、<br>
+						今後の変更への強さを考慮しています。</p>
+					</div>	
+				</li>
+			</ul>
+		</section>
+	<!----contact---->		
+		<section class="contact">
+			<h2 class="content-name-white">CONTACT</h2>
+			<form action="#" method="post" name="name">
+				<input type="text" placeholder="NAME" class="form-name">
+				<input type="text" placeholder="MESSAGE" class="form-message">
+				<input type="button" value="SEND" class="form-btn">
+			</form>
+		</section>
+	</main>
+	<!--------------------footer--------------------> 	
+	<footer class="footer">
+		<p class="copyright">&copy;sample site</p>
+	</footer>
+</body>
+</html>
